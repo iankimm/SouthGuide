@@ -1,0 +1,48 @@
+.navbar {
+  background-color: black; }
+
+.row-content {
+  padding: 30px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+}
+
+.navbar-nav {
+  margin-left : auto;
+}
+
+p {
+  font-family : American Typewriter, serif;
+}
+
+h1, h2, h3 {
+  font-family: "Lobster", cursive; 
+}
+
+h4, h6 {
+  color: #F45656;
+}
+
+body {
+  background-color: #C4C4C1;
+}
+
+footer {
+  background-color : #E9ECEF;
+}
+
+header {
+  background-color : #FFFFFF;
+}
+
+#ranks {
+  font-family : Bradley Hand, cursive;
+}
+#info {
+  font-family : Apple Chancery, cursive;
+  font-size : 20px;
+}

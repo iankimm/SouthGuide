@@ -1,6 +1,3 @@
-.navbar {
-  background-color: black; }
-
 .row-content {
   padding: 30px 0;
   border-bottom: 1px ridge;
@@ -11,12 +8,44 @@
   padding: 30px;
 }
 
+h1 {
+  color : white;
+}
+
 .navbar-nav {
   margin-left : auto;
 }
 
+.carousel-caption h4 {
+  color : #E9ECEF;
+}
+
+.carousel-caption p {
+  color : #E9ECEF;
+}
+
+.carousel-item img {
+  width: 680px;
+  height: 500px;
+  max-height: 500px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
 p {
   font-family : American Typewriter, serif;
+}
+
+ol {
+  color : black;
+}
+
+ol li h7{
+  color : #FE3636;
+}
+ol li {
+  color : gray;
 }
 
 h1, h2, h3 {
@@ -28,15 +57,21 @@ h4, h6 {
 }
 
 body {
-  background-color: #C4C4C1;
+  background-color: #E5E5E5;
 }
 
 footer {
-  background-color : #E9ECEF;
+  background-color : #343A40;
+  color : white;
 }
 
-header {
-  background-color : #FFFFFF;
+#feedbackModal .modal-header {
+  color : black;
+}
+
+#nav-tabContent img {
+  height:100%;
+  width:100%;
 }
 
 #ranks {
@@ -45,4 +80,14 @@ header {
 #info {
   font-family : Apple Chancery, cursive;
   font-size : 20px;
+}
+
+.list-group .list-group-item {
+  background-color: #343A40;
+  color : white;
+  border-bottom-color : white;
+}
+
+.list-group .list-group-item:hover {
+  background-color: pink;
 }

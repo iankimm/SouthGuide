@@ -22,32 +22,19 @@
 </head>
 
 <body>
-  <!-- header -->
-  <header class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-sm-3 col-md-2 align-self-center">
-          <img src="img/flag.jpg" class="img-fluid" />
-        </div>
-        <div class="col">
-          <h1>South Korea</h1>
-          <h2>An Ultimate Traveling Guide</h2>
-        </div>
-      </div>
-    </div>
-  </header>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container">
+      <h1>Guide to South Korea</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nucampNavbar">
         <ul class="navbar-nav">
-          <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-bus fa-lg"></i> Transportation </a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-bus fa-lg"></i>
+              Transportation </a></li>
           <li class="nav-item"><a class="nav-link" href="eatery.html"><i class="fa fa-cutlery fa-lg"></i> Eatery</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="view.html"><i class="fa fa-eye fa-lg"></i> View </a></li>
@@ -57,6 +44,10 @@
       </div>
     </div>
   </nav>
+
+  <!-- header -->
+  <header class="jumbotron jumbotron-fluid">
+  </header>
 
   <!-- Breadcrumb -->
   <div class="container">
@@ -70,91 +61,103 @@
         <hr />
       </div>
     </div>
-
-    <!-- Bus -->
-    <div class="row row-content">
-      <div class="col-sm-4">
-        <h2>Bus</h2>
-        <img src="img/bus.png" class="img-fluid" />
-      </div>
-      <div class="col align-self-center">
-        <h6>Most used. Cheap</h6>
-        <p>
-          One of the most common transportation in South Korea.<br>
-          There are many stations around the city with a map.<br>
-          Each bus will take about 15 minutes to arrive. <br>
-          Payment : Cash (non higher than 5,000 won) or Card<br>
-          <b>Check your destination and which bus number you need to take!</b>
-        </p>
-      </div>
-    </div>
-
-    <!-- Taxi -->
-    <div class="row row-content">
-      <div class="col-sm-4">
-        <h2>Taxi</h2>
-        <img src="img/taxi.jpg" class="img-fluid" />
-      </div>
-      <div class="col align-self-center">
-        <h6>Fast. Price varies depending on distance</h6>
-        <p>
-          Taxi can be easily found near the bus stations or streets. <br>
-          These drivers will take you wherever you want to go. <br>
-          Payment : Cash or Card <br>
-          <b>Must avoid traffic hours / Taxi can charge you by driving time</b>
-        </p>
-      </div>
-    </div>
-
-    <!-- Subway -->
-    <div class="row row-content">
-      <div class="col-sm-4">
-        <h2>Subway</h2>
-        <img src="img/subway.jpg" class="img-fluid" />
-      </div>
-      <div class="col align-self-center">
-        <h6>Well organized. Clean </h6>
-        <p>
-          Bad weather? No problem. <br>
-          These underground torpedo will take you each subway stations fast. <br>
-          Major cities such as Seoul has many subway stations (almost every 10 blocks). <br>
-          Payment : transportation card <br>
-          <b>Must avoid morning time. Students and workers usually use subway.</b>
-        </p>
-      </div>
-    </div>
-
-    <!-- KTX -->
-    <div class="row row-content">
-      <div class="col-sm-4">
-        <h2>KTX</h2>
-        <img src="img/ktx.jpg" class="img-fluid" />
-      </div>
-      <div class="col align-self-center">
-        <h6>Fastest way to move around major cities. </h6>
-        <p>
-          Similar to subway stations, but in larger scale. <br>
-          KTX can cross South Korea within 3 hours. <br>
-          Very useful when you are traveling far. <br>
-          Payment : cash or card <br>
-          <b>Tend to be more expensive.</b>
-        </p>
-      </div>
-    </div>
-
-    <!-- Tips -->
-    <div class="row row-content">
-      <div class = "col">
-        <h5>TIPS</h5>
-        <ul>
-          <li>Use Taxi when you are in hurry.</li>
-          <li>Take Subway if you would like to see scenary.</li>
-          <li>Bus & subway can be crowded during rush hour.</li>
-        </ul>
-      </div>
-    </div>
-
   </div>
+
+    <!-- list -->
+    <div class = "container">
+    <div class="row">
+      <div class="col-4 ">
+        <div class="list-group " id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="bus" data-toggle="list" href="#buss" role="tab"
+            aria-controls="trans1">Bus</a>
+          <a class="list-group-item list-group-item-action" id="taxi" data-toggle="list" href="#taxii" role="tab"
+            aria-controls="trans2">Taxi</a>
+          <a class="list-group-item list-group-item-action" id="subway" data-toggle="list" href="#subwayy" role="tab"
+            aria-controls="trans3">Subway</a>
+          <a class="list-group-item list-group-item-action" id="ktx" data-toggle="list" href="#ktxx" role="tab"
+            aria-controls="trans4">KTX</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="buss" role="tabpanel" aria-labelledby="bus">
+            <div class="media">
+              <img class="img-fluid img-thumbnail" src="img/bus.png" />
+            </div>
+            <div class="media-body text-center">
+              <h6>Most used. Cheap</h6>
+              <p>
+                One of the most common transportation in South Korea.<br>
+                There are many stations around the city with a map.<br>
+                Each bus will take about 15 minutes to arrive. <br>
+                Payment : Cash (non higher than 5,000 won) or Card<br>
+                <b>Check your destination and which bus number you need to take!</b>
+              </p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="taxii" role="tabpanel" aria-labelledby="taxi">
+            <div class="media">
+              <img class="img-fluid img-thumbnail" src="img/taxi.jpg" />
+            </div>
+            <div class="media-body text-center">
+              <h6>Fast. Price varies depending on distance</h6>
+              <p>
+                Taxi can be easily found near the bus stations or streets. <br>
+                These drivers will take you wherever you want to go. <br>
+                Payment : Cash or Card <br>
+                <b>Must avoid traffic hours / Taxi can charge you by driving time</b>
+              </p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="subwayy" role="tabpanel" aria-labelledby="subway">
+            <div class="media">
+              <img class="img-fluid img-thumbnail" src="img/subway.jpg" />
+            </div>
+            <div class="media-body text-center">
+              <h6>Well organized. Clean </h6>
+              <p>
+                Bad weather? No problem. <br>
+                These underground torpedo will take you each subway stations fast. <br>
+                Major cities such as Seoul has many subway stations (almost every 10 blocks). <br>
+                Payment : transportation card <br>
+                <b>Must avoid morning time. Students and workers usually use subway.</b>
+              </p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ktxx" role="tabpanel" aria-labelledby="ktx">
+            <div class="media">
+              <img class="img-fluid img-thumbnail" src="img/ktx.jpg" />
+            </div>
+            <div class="media-body text-center">
+              <h6>Fastest way to move around major cities. </h6>
+              <p>
+                Similar to subway stations, but in larger scale. <br>
+                KTX can cross South Korea within 3 hours. <br>
+                Very useful when you are traveling far. <br>
+                Payment : cash or card <br>
+                <b>Tend to be more expensive.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- tips -->
+    <div class = "container">
+      <div class = "row row-content">
+        <div class = "col">
+          <h3>TIPS</h3>
+          <ul>
+            <li>Don’t rely on Google Maps</li>
+            <li>KTX is the nicest and fastest when you are traveling far</li>
+            <li>Try to use Subway. It is clean, fairly cheap, and will get you everywhere in Seoul and nearby.</li>
+            <li>Take a picture of final destination address to show to Taxi driver. They usually do not speak any different language.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 
   <!-- footer -->
@@ -184,8 +187,9 @@
               class="fa fa-instagram"></i></a>
         </div>
         <div class="col-sm-4 text-center">
-          <h7><b>By Ian Hyeong il Kim</h7><br>
-          <h7>iankimmmmm@gmail.com</h7></b>
+          <br><b>
+            <h7>iankimmmmm@gmail.com</h7>
+          </b>
         </div>
       </div>
     </div>

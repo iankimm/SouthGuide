@@ -22,72 +22,120 @@
 </head>
 
 <body>
-  <!-- header -->
-  <header class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-sm-3 col-md-2 align-self-center">
-          <img src="img/flag.jpg" class="img-fluid" />
-        </div>
-        <div class="col">
-          <h1>South Korea</h1>
-          <h2>An Ultimate Traveling Guide</h2>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <h1>Guide to South Korea</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="transportation.html"><i class="fa fa-bus fa-lg"></i>
+                Transportation </a></li>
+            <li class="nav-item"><a class="nav-link" href="eatery.html"><i class="fa fa-cutlery fa-lg"></i> Eatery</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="view.html"><i class="fa fa-eye fa-lg"></i> View </a></li>
+            <li class="nav-item"><a class="nav-link" href="amusement.html"><i class="fa fa-gamepad fa-lg"></i> Amusement
+              </a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+
+  <!-- header -->
+  <header>
+
+    <!-- Pictures -->
+    <img class = "img-fluid" src = "img/background2.jpg" alt = "first slide" />
   </header>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nucampNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="transportation.html"><i class="fa fa-bus fa-lg"></i>
-              Transportation </a></li>
-          <li class="nav-item"><a class="nav-link" href="eatery.html"><i class="fa fa-cutlery fa-lg"></i> Eatery</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="view.html"><i class="fa fa-eye fa-lg"></i> View </a></li>
-          <li class="nav-item"><a class="nav-link" href="amusement.html"><i class="fa fa-gamepad fa-lg"></i> Amusement
-            </a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <!-- information -->
-  <div class="container">
-    <div class="row row-content">
-      <div class="col">
-        <h5>Facts</h5>
-        <ul class="list-unstyled" id="ranks">
-          <li><b>Ranked #1</b>, Safest country for travelers (with safety index 85.69)</li>
-          <li><b>Ranked #5</b>, Connection to the rest of the world</li>
-          <li><b>Ranked #6</b>, Adaptable and modern environment</li>
-          <li><b>Ranked #7</b>, Cultural influence with fashions and consumer brands</li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <h4>Have you ever visited South Korea?</h4>
-      </div>
-    </div>
-    <div class="row row-content">
+
+  <div class = "container">
+    <div class = "row row-content">
       <div class = "col">
-        <img class= "d-block img-fluid" src="img/lotte.jpg" />
-      </div>
-      <div class="col-sm-5 align-self-center" id = "info">
-        <p>
-          Known for their food, known for their music, known for their fashion.
-          <br>South Korea is a country you will never forget.
-          <br>This guide will help you enjoy South Korea 100%.
-        </p>
+        <h3>Statistics</h3>
+        <div id = "accordion">
+          <div class = "card">
+            <div role = "tab" class = "card-header">
+              <h4>
+                <a data-toggle="collapse" data-target="#rank1">
+                  Ranked #1 <small> Safest country for travelers </small>
+                </a>
+              </h4>
+              <div class = "collapse show" id = "rank1" data-parent = "#accordion">
+                <div class = "card-body">
+                  <p class = "d-none d-sm-block">
+                    According to Numbeo, a data aggregator of city and country statistics, 
+                    Korea has the highest overall safety index in the world, with a score of 85.69, 
+                    and it ranked number one among the 117 countries on the list.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "card">
+            <div role = "tab" class = "card-header">
+              <h4>
+                <a class="collapsed" data-toggle="collapse" data-target="#rank2">
+                  Ranked #5 <small> Connection to the rest of the world </small>
+                </a>
+              </h4>
+              <div class="collapse" id="rank2" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block">South Korea’s high-tech, service-based economy, is a foreign investment success story, becoming the first recipient of OECD Development Assistance Committee funds to later become a donor of the funds. 
+                    The nation has seen steady growth and poverty reduction since the 1960s and is now the world’s seventh-largest exporter and 11th-largest economy overall.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "card">
+            <div role = "tab" class = "card-header">
+              <h4>
+                <a class="collapsed" data-toggle="collapse" data-target="#rank3">
+                  Ranked #6 <small> Adaptable and modern environment </small>
+                </a>
+              </h4>
+              <div class="collapse" id="rank3" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block">Seoul, the nation's capital, is in the process of "growth," "high industrialization ratio," "rapid urbanization," 
+                    "mass The paper will examine each factor and discuss how the process of industrial development causes serious environmental damage, 
+                    and how modern urban planning and technology have great potential to reverse those damages</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "card">
+            <div role = "tab" class = "card-header">
+              <h4>
+                <a class="collapsed" data-toggle="collapse" data-target="#rank4">
+                  Ranked #7 <small> Cultural influence with fashions and consumer brands </small>
+                </a>
+              </h4>
+              <div class="collapse" id="rank4" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block">South Korea is one of the only countries in the world, if not the only one, 
+                    that has a dedicated goal to become the world’s leading exporter of popular culture. It is a way for Korea to develop its “soft power”. Soft power is a popular term coined in 1990 by Harvard political scientist Joseph Nye.
+                    It refers to the intangible power a country wields through its image,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
+  </div>
+
+  <!-- feedback modal -->
+
+  <div class = "container">
     <div class="row row-content">
       <div class = "col text-center">
         <a class="btn btn-dark btn-lg" role="button" id="feedbackButton">Feedback</a>
@@ -95,11 +143,10 @@
     </div>
   </div>
 
-  <!-- feedback modal -->
   <div id = "feedbackModal" class = "modal fade" role = "dialog">
     <div class = "modal-dialog modal-lg" role = "document">
       <div class = "modal-content">
-        <div class = "modal-header">
+        <div class = "modal-header text-white bg-dark">
           <h3 class = "modal-title">Feedback</h3>
         </div>
         <div class = "modal-body">
@@ -157,8 +204,7 @@
               class="fa fa-instagram"></i></a>
         </div>
         <div class="col-sm-4 text-center">
-          <h7><b>By Ian Hyeong il Kim</h7><br>
-          <h7>iankimmmmm@gmail.com</h7></b>
+          <br><b><h7>iankimmmmm@gmail.com</h7></b>
         </div>
       </div>
     </div>

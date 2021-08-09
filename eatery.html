@@ -22,41 +22,33 @@
 </head>
 
 <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <h1>Guide to South Korea</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="transportation.html"><i class="fa fa-bus fa-lg"></i>
+                Transportation </a></li>
+            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-cutlery fa-lg"></i> Eatery</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="view.html"><i class="fa fa-eye fa-lg"></i> View </a></li>
+            <li class="nav-item"><a class="nav-link" href="amusement.html"><i class="fa fa-gamepad fa-lg"></i> Amusement
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
   <!-- header -->
   <header class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-sm-3 col-md-2 align-self-center">
-          <img src="img/flag.jpg" class="img-fluid" />
-        </div>
-        <div class="col">
-          <h1>South Korea</h1>
-          <h2>An Ultimate Traveling Guide</h2>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nucampNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="transportation.html"><i class="fa fa-bus fa-lg"></i>
-              Transportation </a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-cutlery fa-lg"></i> Eatery</a></li>
-          <li class="nav-item"><a class="nav-link" href="view.html"><i class="fa fa-eye fa-lg"></i> View </a></li>
-          <li class="nav-item"><a class="nav-link" href="amusement.html"><i class="fa fa-gamepad fa-lg"></i> Amusement
-            </a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  </header>
 
   <!-- Breadcrumb -->
   <div class="container">
@@ -71,6 +63,84 @@
       </div>
     </div>
 
+    <!-- Pictures -->
+    <div class = "container">
+      <div class = "row row-content">
+        <div class = "col-md-8 mx-auto">
+          <div id = "foodCarousel" class = "carousel slide" data-ride = "carousel">
+            <ol class = "carousel-indicators">
+              <li data-target = "#foodCarousel" data-slide-to = "0" class = "active"></li>
+              <li data-target = "#foodCarousel" data-slide-to = "1"></li>
+              <li data-target = "#foodCarousel" data-slide-to = "2"></li>
+              <li data-target = "#foodCarousel" data-slide-to = "3"></li>
+            </ol>
+            <div class = "carousel-inner">
+              <div class = "carousel-item active">
+                <img class="d-block w-100" src="img/food1.jpg" alt="jja jang" />
+                <div class = "carousel-caption">
+                  <h4>Mokran</h4>
+                  <p class = "d-none d-sm-block">Korean style chinese food by famouse Korean chef name Yunbok Lee <br>
+                  located Yeonhui-dong, Seodaemun-gu, Seoul.
+                  </p>
+                </div>
+              </div>
+              <div class = "carousel-item">
+                <img class="d-block w-100" src="img/food2.jpg" alt="sam gyub" />
+                <div class = "carousel-caption">
+                  <h4>Yukjeon Sikdang</h4>
+                  <p class = "d-none d-sm-block">Korean BBQ with victory onion <br>
+                  located Yongsin-dong, Dongdaemun-gu, Seoul.
+                  </p>
+                </div>
+              </div>
+              <div class = "carousel-item">
+                <img class = "d-block w-100" src = "img/food3.jpg" alt = "si jang" />
+                <div class = "carousel-caption">
+                  <h4>Namdaemun Market</h4>
+                  <p class = "d-none d-sm-block">Street food that will show you Korean culture <br>
+                    located Hoehyeon-dong, Jung-gu, Seoul.
+                  </p>
+                </div>
+              </div>
+              <div class = "carousel-item">
+                <img class = "d-block w-100" src = "img/food4.jpg" alt = "si jang" />
+                <div class = "carousel-caption">
+                  <h4>Hannam Oriental Roast Chicken</h4>
+                  <p class = "d-none d-sm-block">Chicken roasted with kimchi and rice inside <br>
+                    located Hannam-dong, Yongsan-gu, Seoul.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- information -->
+    <div class = "container">
+      <div class = "row row-content">
+        <div class = "col">
+          <ol><b><h3>List of food you must try!</h3></b><br>
+            <li><h7><b>Gimbap</b></h7> <br>
+              A Korean dish made from cooked rice and ingredients such as vegetables, fish and meats that are rolled in dried sheets of seaweed <br>
+              Recommendation : Gimbap Paradise, Teacher Kim, Kobongmin
+            </li>
+            <li><h7><b>Gopchang</b></h7> <br>
+              Small intestines of cattle with buttery bursts of beefiness paired with a subtly pleasant touch of barnyard in each chewy bite. <br>
+              Recommendation : Aunt's Cattle Intestines, Gopchang Story, Gopchang Addcits
+            </li>
+            <li><h7><b>McDonalds</b></h7> <br>
+              Korean style McDoanlds. Burgers are completely different, flavorful, and delicious.
+            </li>
+            <li><h7><b>Bibimbap</b></h7> <br>
+              Bibimbap is served as a bowl of warm white rice topped with vegetables or kimchi and gochujang <br>
+              Recommendation : Kkot Bape Pida, Otong-Yeong
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
 
 
   </div>
@@ -102,8 +172,7 @@
               class="fa fa-instagram"></i></a>
         </div>
         <div class="col-sm-4 text-center">
-          <h7><b>By Ian Hyeong il Kim</h7><br>
-          <h7>iankimmmmm@gmail.com</h7></b>
+          <br><b><h7>iankimmmmm@gmail.com</h7></b>
         </div>
       </div>
     </div>
